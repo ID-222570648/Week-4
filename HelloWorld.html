@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title> Task 1 – Create basic Vue application </title>
+  <script src="https://cdn.jsdelivr.net/npm/vue@2.7.4/dist/vue.js"></script>
+  
+</head>
+<!--  https://v2.vuejs.org/v2/guide/#Declarative-Rendering Date accessd: 7/09/2022-->
+
+<body>
+  <div id="app" style="font-size: 20px;text-align: center; 
+  color:darkorange; margin-top: 10px;">
+    {{ message }}
+  </div>
+
+  <p>Vue is a prograssive framework for building user interface.<br>
+Vue is increamentally adaptive. Vue can integrate with other libraries or existing projects.<br>
+Vue is reactive. Vue can update data into the HTML. </p>
+<script>
+    var app = new Vue({
+      el: '#app',
+      data: {
+        message: 'Hello World! '
+      }
+    })
+  </script>
+</body>
+</html>
